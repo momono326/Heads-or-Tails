@@ -1,9 +1,15 @@
+import java.util.Scanner;
 class HeadandTail
 {
     public static void main(String args[])
     {
 	int n, r;
 	int h = 0, t = 0;
+
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Who are you?");
+	String name = sc.nextLine();
+	System.out.println("Hello, " + name);
 	System.out.println("Tossing a coin...");
 	for(int i = 0; i < 3; i++)
 	    {
@@ -24,7 +30,7 @@ class HeadandTail
 	    }
 	System.out.println("Heads: " + h + ", Tails: " + t) ;
 
-	if(h > t) System.out.println("you won!");
-	if(t > h) System.out.println("You lost.");
+	if(h > t) System.out.println(name + " won!");
+	if(t > h) System.out.println(name + " lost.");
     }
 }
