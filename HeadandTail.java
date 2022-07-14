@@ -22,6 +22,9 @@ class HeadandTail
 			t++;
 		    }
 	    }
-	System.out.println("Heads: " + h + ", Tails: " + t) ;	    
+	System.out.println("Heads: " + h + ", Tails: " + t) ;
+
+	if(h > t) System.out.println("you won!");
+	if(t > h) System.out.println("You lost.");
     }
 }
